@@ -22,7 +22,7 @@
 
     Errc_code_t insertion(Info_list_t* , const int32_t);
     Errc_code_t printLinkedList(Info_list_t*);
-    //Delete
+    Errc_code_t delete(Info_list_t*, const int32_t);
     //update
     //research
 
