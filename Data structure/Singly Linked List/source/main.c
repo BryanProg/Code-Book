@@ -18,5 +18,21 @@ int main()
     putchar('\n');
     printLinkedList(&linkedList);
 
+    delete(&linkedList, 9);
+    putchar('\n');
+    printLinkedList(&linkedList);
+
+    delete(&linkedList, 9);
+    putchar('\n');
+    printLinkedList(&linkedList);
+
+    delete(&linkedList, 0);
+    putchar('\n');
+    printLinkedList(&linkedList);
+
+    delete(&linkedList, 88);
+    putchar('\n');
+    printLinkedList(&linkedList);
+
     return 0;
 }

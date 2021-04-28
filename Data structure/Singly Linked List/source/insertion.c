@@ -5,7 +5,7 @@ Errc_code_t insertion(Info_list_t* list, const int32_t information)
     Linked_list_t* newNode = (Linked_list_t*) malloc(sizeof(Linked_list_t));
     if(!newNode)
     {
-        fprintf(stderr, "Without memory");
+        fprintf(stderr, "Without memory\n");
         return LL_EC_WITHOUT_MEMORY;
     }
 
