@@ -15,23 +15,28 @@ int main()
     insertion(&linkedList, 5);
     insertion(&linkedList, 22);
 
-    putchar('\n');
     printLinkedList(&linkedList);
 
-    delete(&linkedList, 9);
-    putchar('\n');
+    deleteNo(&linkedList, 9);
     printLinkedList(&linkedList);
 
-    delete(&linkedList, 9);
-    putchar('\n');
+    deleteNo(&linkedList, 9);
     printLinkedList(&linkedList);
 
-    delete(&linkedList, 0);
-    putchar('\n');
+    deleteNo(&linkedList, 0);
     printLinkedList(&linkedList);
 
-    delete(&linkedList, 88);
-    putchar('\n');
+    deleteNo(&linkedList, 88);
+    printLinkedList(&linkedList);
+
+    int32_t sizeOfList = sizeListRecursive(linkedList.head);
+
+    printf("The size of the list is %d\n", sizeOfList);
+
+    fillList(&linkedList, 10);
+    printLinkedList(&linkedList);
+
+    fillList(&linkedList, 1000);
     printLinkedList(&linkedList);
 
     return 0;

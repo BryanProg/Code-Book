@@ -9,7 +9,7 @@
 
     typedef struct LINKED_LIST
     {
-        int32_t data;// Can be any information
+        int32_t data;
         struct LINKED_LIST* next;
     } Linked_list_t;
 
@@ -20,10 +20,15 @@
         Linked_list_t* tail;
     }Info_list_t;
 
+    int32_t sizeList(Linked_list_t*);
+    int32_t sizeListRecursive(Linked_list_t*);
+
     Errc_code_t insertion(Info_list_t* , const int32_t);
     Errc_code_t printLinkedList(Info_list_t*);
-    Errc_code_t delete(Info_list_t*, const int32_t);
-    //update
+    Errc_code_t deleteNo(Info_list_t*, const int32_t);
+    Errc_code_t deleteFirst(Info_list_t*);
+    Errc_code_t fillList(Info_list_t*, int32_t);
+
     //research
 
 #endif

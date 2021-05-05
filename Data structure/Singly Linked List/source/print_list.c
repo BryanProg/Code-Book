@@ -21,7 +21,7 @@ Errc_code_t printLinkedList(Info_list_t* list)
         hold = hold->next;
     }
     
-    puts("End of the list");
+    puts("End of the list\n");
 
     return LL_EC_SUCESS;
 }

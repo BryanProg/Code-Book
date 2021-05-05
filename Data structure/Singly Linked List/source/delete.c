@@ -1,6 +1,6 @@
 #include "../header/LinkedList_Base.h"
 
-Errc_code_t delete(Info_list_t* list, const int32_t information)
+Errc_code_t deleteNo(Info_list_t* list, const int32_t information)
 {
     if (!list->head && !list->tail)
     {

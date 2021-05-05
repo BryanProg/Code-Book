@@ -20,7 +20,7 @@ Errc_code_t insertion(Info_list_t* list, const int32_t information)
     else if (list->head->data >= information)
     {
         newNode->next = list->head;
-        list->head = newNode;
+        list->head    = newNode;
     }
     else if (list->tail->data <= information)
     {
